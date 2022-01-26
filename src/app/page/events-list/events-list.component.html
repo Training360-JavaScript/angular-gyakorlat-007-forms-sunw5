@@ -18,7 +18,9 @@
         <td>{{event.time}}</td>
         <td>{{event.location}}</td>
         <td>
-
+          <button [routerLink]="['/', 'event', event.id]" class="btn btn-info">
+            <i class="fa fa-eye"></i>
+          </button>
         </td>
       </tr>
     </tbody>
